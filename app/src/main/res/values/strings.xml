@@ -1,4 +1,32 @@
 <resources>
-    <string name="app_name">kotlin-demo</string>
+    <string name="app_name">kotlin-demo fuad</string>
     <string name="roll">Roll</string>
+    <string name="name">Fuadul Hasan</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">
+        Fuadul Hasan\n
+Software Developer | Backend Engineer | Tech Enthusiast\n
+\n
+💻 Expertise:\n
+\n
+Backend Development: Go (Gin framework), Spring Boot, Django\n
+Frontend Development: Vue, React, Angular\n
+Database Management: PostgreSQL\n
+🚀 What I Do:\n
+I am a passionate and ambitious software developer with a strong focus on backend development. I enjoy working on innovative projects that challenge my skills and push me to learn more.\n
+\n
+🎯 Current Projects:\n
+\n
+Employee Observer System (React + Go)\n
+Codeforces-like Competitive Programming Platform (Personal Project)\n
+Android Development – Learning Kotlin and building a converter app\n
+📈 Continuous Learning:\n
+\n
+500-day streak on LeetCode (Problem-solving and Algorithmic Thinking)\n
+Exploring System Design and Full-cycle Go project development (unit testing, CI/CD, deployment)\n
+🌱 Beyond Coding:\n
+I strive for self-improvement by balancing planned and unplanned tasks. I enjoy reading, fitness, and mindfulness practices to maintain a well-rounded lifestyle.\n
+    </string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
 </resources>

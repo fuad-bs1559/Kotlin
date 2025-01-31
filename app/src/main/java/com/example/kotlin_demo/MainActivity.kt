@@ -1,47 +1,47 @@
 package com.example.kotlin_demo
 
-import android.annotation.SuppressLint
-import android.media.Image
+import android.content.Context
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlin.random.Random
+import androidx.databinding.DataBindingUtil
+import com.example.kotlin_demo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var diceImage: ImageView
-
+    private lateinit var bindings: ActivityMainBinding
+    private val myName: MyName = MyName("Fuadul Hasan")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        bindings = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        bindings.myName = myName
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        diceImage = findViewById(R.id.dice_image)
-        val rollButton : Button = findViewById(R.id.roll_button)
-        rollButton.setOnClickListener {
-            rollDice()
+        bindings.doneButton.setOnClickListener{
+            addNickname(it)
         }
     }
-    @SuppressLint("SetTextI18n")
-    private fun rollDice() {
-        val randomInt = Random.nextInt(6)+1
-        val drawableResource = when (randomInt){
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
+    private fun addNickname(view: View){
+
+        bindings.apply {
+//            nicknameText.text = bindings.nicknameEdit.text
+            myName?.nickname = nicknameEdit.text.toString()
+            invalidateAll()
+            nicknameEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+            nicknameText.visibility = View.VISIBLE
         }
-        diceImage.setImageResource(drawableResource)
+
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }
