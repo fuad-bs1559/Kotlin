@@ -26,22 +26,5 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        bindings.doneButton.setOnClickListener{
-            addNickname(it)
-        }
-    }
-    private fun addNickname(view: View){
-
-        bindings.apply {
-//            nicknameText.text = bindings.nicknameEdit.text
-            myName?.nickname = nicknameEdit.text.toString()
-            invalidateAll()
-            nicknameEdit.visibility = View.GONE
-            doneButton.visibility = View.GONE
-            nicknameText.visibility = View.VISIBLE
-        }
-
-        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }
