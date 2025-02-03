@@ -29,4 +29,14 @@ I strive for self-improvement by balancing planned and unplanned tasks. I enjoy 
     </string>
     <string name="what_is_your_nickname">What is your Nickname?</string>
     <string name="done">Done</string>
+    <string name="box_one">Box One</string>
+    <string name="box_two">Box Two</string>
+    <string name="box_three">Box Three</string>
+    <string name="box_four">Box Four</string>
+    <string name="box_five">Box Five</string>
+    <string name="button_red">RED</string>
+    <string name="button_Yellow">YELLOW</string>
+    <string name="button_green">GREEN</string>
+    <string name="how_to_paly">How To Play</string>
+    <string name="tap_the_box_and_buttons">Tab the Boxs and Buttons</string>
 </resources>
