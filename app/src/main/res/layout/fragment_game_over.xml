@@ -17,7 +17,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.navigation.GameOverFragment">
+    tools:context="com.example.kotlin_demo.GameOverFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gameOverConstraintLayout"
@@ -26,7 +26,7 @@
         android:background="@color/gameOverBackground">
 
         <ImageView
-            android:id="@+id/youLoseImage"
+            android:id="@+id/gameOverFragment"
             android:layout_width="wrap_content"
             android:layout_height="362dp"
             android:layout_marginStart="@dimen/horizontal_margin"
