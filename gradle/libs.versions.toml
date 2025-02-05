@@ -8,10 +8,12 @@ espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.0"
-constraintlayout = "2.1.4"
+constraintlayout = "2.2.0"
 navigationFragmentKtx = "2.8.6"
 navigationUiKtx = "2.8.6"
 playServicesBasement = "18.5.0"
+roomCommon = "2.6.1"
+roomKtx = "2.6.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -27,8 +29,11 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 timber = "com.jakewharton.timber:timber:5.0.1"
 lifecycle = "androidx.lifecycle:lifecycle-extensions:2.2.0"
 play-services-basement = { group = "com.google.android.gms", name = "play-services-basement", version.ref = "playServicesBasement" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+androidx-room-compiler = "androidx.room:room-compiler:2.6.1"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-navigation-safe-args = {id = "androidx.navigation.safeargs.kotlin" , version = "2.7.0"}
+navigation-safe-args = {id = "androidx.navigation.safeargs.kotlin" , version = "2.8.6"}
