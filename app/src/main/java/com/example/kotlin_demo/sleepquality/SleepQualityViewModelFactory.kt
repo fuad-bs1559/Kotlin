@@ -26,8 +26,8 @@ import com.example.kotlin_demo.database.SleepDatabaseDao
  * Provides the key for the night and the SleepDatabaseDao to the ViewModel.
  */
 class SleepQualityViewModelFactory(
-        private val sleepNightKey: Long,
-        private val dataSource: SleepDatabaseDao
+    private val sleepNightKey: Long,
+    private val dataSource: SleepDatabaseDao
 ) : ViewModelProvider.Factory {
     @Suppress("unchecked_cast")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
