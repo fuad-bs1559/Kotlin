@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright 2018, The Android Open Source Project
   ~
@@ -15,14 +17,14 @@
   ~
   -->
 
-<resources>
-    <string name="app_name">Real Estate on Mars</string>
-    <string name="show_all">Show all</string>
-    <string name="show_rent">Rent</string>
-    <string name="show_buy">Buy</string>
-    <string name="type_rent">Rent</string>
-    <string name="type_sale">Sale</string>
-    <string name="display_type">For %s</string>
-    <string name="display_price_monthly_rental">$%,.0f/month</string>
-    <string name="display_price">$%,.0f</string>
-</resources>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/show_all_menu"
+        android:title="@string/show_all" />
+    <item
+        android:id="@+id/show_rent_menu"
+        android:title="@string/show_rent" />
+    <item
+        android:id="@+id/show_buy_menu"
+        android:title="@string/show_buy" />
+</menu>
