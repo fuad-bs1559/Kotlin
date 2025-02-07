@@ -30,7 +30,7 @@ import com.example.kotlin_demo.network.MarsProperty
  * data, including computing diffs between lists.
  * @param onClick a lambda that takes the
  */
-class PhotoGridAdapter( val onClickListener: OnClickListener) :
+class PhotoGridAdapter(private val onClickListener: OnClickListener) :
     ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCallback) {
     /**
      * The MarsPropertyViewHolder constructor takes the binding variable from the associated

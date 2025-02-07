@@ -36,7 +36,7 @@ class OverviewFragment : Fragment() {
      * Lazily initialize our [OverviewViewModel].
      */
     private val viewModel: OverviewViewModel by lazy {
-        ViewModelProvider(this).get(OverviewViewModel::class.java)
+        ViewModelProvider(this)[OverviewViewModel::class.java]
     }
 
     /**
@@ -78,6 +78,7 @@ class OverviewFragment : Fragment() {
     /**
      * Inflates the overflow menu that contains filtering options.
      */
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.overflow_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
@@ -87,6 +88,7 @@ class OverviewFragment : Fragment() {
      * Updates the filter in the [OverviewViewModel] when the menu items are selected from the
      * overflow menu.
      */
+    @Deprecated("Deprecated in Java")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         viewModel.updateFilter(
             when (item.itemId) {
