@@ -14,6 +14,7 @@ navigationUiKtx = "2.8.6"
 playServicesBasement = "18.5.0"
 roomCommon = "2.6.1"
 roomKtx = "2.6.1"
+common = "0.10.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,13 @@ play-services-basement = { group = "com.google.android.gms", name = "play-servic
 androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-room-compiler = "androidx.room:room-compiler:2.6.1"
+common = { group = "com.google.ai.client.generativeai", name = "common", version.ref = "common" }
+retrofit2 = {group =  'com.squareup.retrofit2', name = 'converter-moshi', version = '2.11.0'}
+glide = "com.github.bumptech.glide:glide:4.13.2"
+recycleview = "androidx.recyclerview:recyclerview:1.4.0"
+moshi = "com.squareup.moshi:moshi:1.14.0"
+moshi-kotlin = "com.squareup.moshi:moshi-kotlin:1.14.0"
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

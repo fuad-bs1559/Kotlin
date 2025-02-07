@@ -23,7 +23,7 @@
     <data>
         <variable
             name="property"
-            type="com.example.android.marsrealestate.network.MarsProperty" />
+            type="com.example.kotlin_demo.network.MarsProperty" />
     </data>
     <ImageView
         android:id="@+id/mars_image"

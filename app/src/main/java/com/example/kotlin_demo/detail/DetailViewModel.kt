@@ -22,6 +22,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
+import com.example.kotlin_demo.R
+import com.example.kotlin_demo.network.MarsProperty
 
 /**
  *  The [ViewModel] associated with the [DetailFragment], containing information about the selected
